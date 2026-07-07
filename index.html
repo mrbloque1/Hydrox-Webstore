@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🚀 NovaWeb Studio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:linear-gradient(-45deg,#6a11cb,#2575fc,#00c9ff,#92fe9d);
+background-size:400% 400%;
+animation:fondo 12s ease infinite;
+
+color:white;
+
+}
+
+@keyframes fondo{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+header{
+
+padding:25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+backdrop-filter:blur(20px);
+
+background:rgba(255,255,255,.08);
+
+position:sticky;
+top:0;
+
+}
+
+.logo{
+
+font-size:32px;
+font-weight:bold;
+
+}
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+
+}
+
+.hero{
+
+height:90vh;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:70px;
+
+}
+
+.hero p{
+
+font-size:22px;
+margin-top:20px;
+margin-bottom:35px;
+
+}
+
+button{
+
+padding:18px 40px;
+
+font-size:18px;
+
+border:none;
+
+border-radius:40px;
+
+background:white;
+
+color:#2575fc;
+
+cursor:pointer;
+
+font-weight:bold;
+
+transition:.4s;
+
+}
+
+button:hover{
+
+transform:scale(1.1);
+
+}
+
+section{
+
+padding:80px 8%;
+
+}
+
+h2{
+
+text-align:center;
+font-size:45px;
+margin-bottom:60px;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:35px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(20px);
+
+padding:40px;
+
+border-radius:25px;
+
+text-align:center;
+
+transition:.4s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+}
+
+.card:hover{
+
+transform:translateY(-15px) scale(1.05);
+
+}
+
+.precio{
+
+font-size:70px;
+
+font-weight:bold;
+
+margin:25px 0;
+
+}
+
+ul{
+
+list-style:none;
+
+}
+
+li{
+
+margin:15px;
+
+font-size:18px;
+
+}
+
+footer{
+
+text-align:center;
+
+padding:35px;
+
+background:rgba(0,0,0,.25);
+
+margin-top:60px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">🚀 NovaWeb Studio</div>
+
+<nav>
+
+<a href="#">🏠 Inicio</a>
+
+<a href="#precios">💰 Precios</a>
+
+<a href="#">📞 Contacto</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>🌍 Creamos Webs Increíbles</h1>
+
+<p>Diseños modernos ⚡ rápidos ⚡ profesionales ⚡</p>
+
+<button onclick="alert('📩 Escríbenos para crear tu web.')">
+🚀 Empezar
+</button>
+
+</section>
+
+<section id="precios">
+
+<h2>💎 Nuestros Planes</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🟢 Simple</h3>
+
+<div class="precio">3€</div>
+
+<ul>
+
+<li>✅ Diseño básico</li>
+
+<li>✅ Adaptada al móvil</li>
+
+<li>✅ Entrega rápida</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>🟡 Media</h3>
+
+<div class="precio">6€</div>
+
+<ul>
+
+<li>🔥 Diseño Premium</li>
+
+<li>🔥 Animaciones</li>
+
+<li>🔥 Formulario</li>
+
+<li>🔥 SEO básico</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>🔴 Avanzada</h3>
+
+<div class="precio">12€</div>
+
+<ul>
+
+<li>🚀 Diseño Profesional</li>
+
+<li>🚀 Tienda Online</li>
+
+<li>🚀 Panel de Administración</li>
+
+<li>🚀 Optimización SEO</li>
+
+<li>🚀 Soporte</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+💙 Hecho con ❤️ por <b>HydroxMC</b><br><br>
+
+🌍 Tu negocio merece una web increíble 🚀
+
+</footer>
+
+</body>
+</html>
